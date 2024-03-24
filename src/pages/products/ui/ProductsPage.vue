@@ -8,14 +8,19 @@ const range = ref()
 </script>
 
 <template>
-  <h1>Products Page</h1>
-  <osk-button  :class-container="classes" :label="text" jopa="text">
-    <template #icon="slotProps">
-      {{slotProps.icon}}
-    </template>
-  </osk-button>
+  <div>
+    <h1>Products Page</h1>
+    <osk-button  :class-container="classes" :label="text" jopa="text">
+      <template #icon="slotProps">
+        {{slotProps.icon}}
+      </template>
+    </osk-button>
 
-  <osk-range-picker v-model="range"/>
+    <osk-range-picker v-model="range"/>
+    <router-link :to="{name: 'ProductPage', params: {productId: 5}}">Product</router-link>
+  </div>
+
+
 </template>
 
 <style scoped>

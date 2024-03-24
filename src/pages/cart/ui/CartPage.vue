@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Card Page</h1>
+  <h1>Cart Page</h1>
 </template>
 
 <style scoped>

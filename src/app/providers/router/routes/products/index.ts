@@ -5,5 +5,5 @@ export const routeName: string = 'ProductsPage'
 export const route: RouteRecordRaw = {
   name: routeName,
   path: '/products',
-  component: () => import('@/pages/products')
+  component: () => import('@/pages/products'),
 }
