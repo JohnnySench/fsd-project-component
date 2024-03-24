@@ -22,12 +22,12 @@ const theme = usePassThrough(
     ...attrs.ptOptions
   }
 );
-
+console.log(attrs);
 </script>
 
 <template>
   <div :class="classContainer">
-    <prime-button :pt="theme" v-bind="$attrs">
+    <prime-button :pt="theme" v-bind="attrs">
       <template v-if="$slots.icon" #icon="{slotProps}">
         <slot name="icon" :icon="slotProps"/>
       </template>
