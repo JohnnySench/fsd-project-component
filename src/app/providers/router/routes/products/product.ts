@@ -4,6 +4,6 @@ export const routeName: string = 'ProductPage'
 
 export const route: RouteRecordRaw = {
   name: routeName,
-  path: '/product/:productId',
+  path: '/products/:productId',
   component: () => import('@/pages/product'),
 }

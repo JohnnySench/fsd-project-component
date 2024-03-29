@@ -4,5 +4,5 @@ export interface IOskButtonProps extends /* @vue-ignore */ ButtonProps {
 }
 
 export interface IOskButtonSlots extends /* @vue-ignore */ ButtonSlots {
-
+  [key: string]: any,
 }
