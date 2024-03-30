@@ -13,6 +13,7 @@
 //   testUiRoute,
 // ] as const;
 
+
 export const routes = [
   {
     path: '/',
@@ -45,15 +46,35 @@ export const routes = [
         name: 'applications',
         component: () => import('@/pages/applicationsPage.vue'),
         meta: {
+          parent: true,
           title: 'Заявки',
           layout: true,
           sidebar: true,
-        }
+        },
+        children: [
+          {
+            path: 'create',
+            name: 'create-application',
+            component: () => import('@/pages/createApplication.vue'),
+            meta: {
+              sidebar: false,
+              layout: false,
+              parent: false,
+              isHasSteps: true,
+            },
+          }
+        ]
       },
       {
         path: 'guide/enterprises',
         name: 'enterprises',
         component: () => import('@/pages/enterprisesPage.vue'),
+        meta: {
+          parent: true,
+          layout: true,
+          title: 'Предприятия',
+          sidebar: true,
+        },
         children: [
           {
             path: 'add',
