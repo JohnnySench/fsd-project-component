@@ -1,0 +1,1 @@
+export {default as CreatApplicationFormCard} from './index.vue';

@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 
 interface ICheck {
   text: string,
-  date: Date | null,
+  date: Date | null | string,
   gender: string,
   type: string,
 }
