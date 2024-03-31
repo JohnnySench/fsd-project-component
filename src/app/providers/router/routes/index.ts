@@ -62,6 +62,18 @@ export const routes = [
               parent: false,
               isHasSteps: true,
             },
+          },
+          {
+            path: 'edit/:id',
+            name: 'edit-application',
+            component: () => import('@/pages/editApplication.vue'),
+            meta: {
+              sidebar: false,
+              layout: false,
+              parent: false,
+              isHasSteps: false,
+              title: 'Редактируем заяку'
+            }
           }
         ]
       },

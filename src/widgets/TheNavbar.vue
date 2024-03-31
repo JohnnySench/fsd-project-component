@@ -2,7 +2,7 @@
 const items = [
   {namePath: 'schedule', label: 'Расписание'},
   {namePath: 'results', label: 'Результаты'},
-  {namePath: 'applications', label: 'Результаты'},
+  {namePath: 'applications', label: 'Заявки'},
 ]
 </script>
 
