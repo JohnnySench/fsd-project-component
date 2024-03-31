@@ -51,7 +51,6 @@ const headerContentByStep = [
 
 
 
-// const step1 = () => import('@/widgets/createApplications.vue', {});
 const step2 = () => import('@/widgets/checkApplicationData.vue');
 const step3 = () => import('@/widgets/confirmApplication.vue');
 </script>
