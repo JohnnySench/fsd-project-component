@@ -14,6 +14,7 @@
 // ] as const;
 
 
+
 export const routes = [
   {
     path: '/',
@@ -21,6 +22,11 @@ export const routes = [
     component: () => import('@/layouts/index.vue'),
     redirect: 'schedule',
     children: [
+      {
+        path: 'test-ui',
+        name: 'test-ui',
+        component: () => import('@/pages/TestUi/ui/index.vue')
+      },
       {
         path: 'schedule',
         name: 'schedule',

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-
+import {CustomFilter} from '@/features/filter';
 </script>
 
 <template>
-  <h1>SCHEDULE PAGE</h1>
+    <CustomFilter :vertical="true"/>
 </template>
 
 <style scoped>
